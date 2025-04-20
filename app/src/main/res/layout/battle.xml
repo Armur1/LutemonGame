@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgChampion"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Champion" />
+
+            <TextView
+                android:id="@+id/textChampionHP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Champion HP"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgEnemy"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:contentDescription="Enemy" />
+
+            <TextView
+                android:id="@+id/textEnemyHP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enemy HP"
+                android:textSize="18sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attack"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/btnUltimate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use Ultimate"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp" />
+</LinearLayout>
+
+

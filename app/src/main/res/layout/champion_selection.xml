@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Lutemon name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your Lutemon"
+            android:textSize="18sp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <GridLayout
+            android:id="@+id/lutemonGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:rowOrderPreserved="false"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/imgPink"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:src="@drawable/pink_lutemon"
+                android:contentDescription="Pink Lutemon"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgBlack"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:src="@drawable/black_lutemon"
+                android:contentDescription="Black Lutemon"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgOrange"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:src="@drawable/orange_lutemon"
+                android:contentDescription="Orange Lutemon"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgWhite"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:src="@drawable/white_lutemon"
+                android:contentDescription="White Lutemon"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:id="@+id/imgGreen"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:layout_columnSpan="2"
+                android:src="@drawable/green_lutemon"
+                android:contentDescription="Green Lutemon"
+                android:scaleType="centerCrop" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textUltimatesInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="8dp"
+            android:text="Ultimates:\nPink (Healer): Restore part of your HP\nBlack (Tank): Block 100% of next damage\nOrange (Carry): Deal 200% damage on next hit\nWhite (Berserk): Reflect received damage\nGreen (Mirror): Counterattack during enemy's turn" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Game"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
